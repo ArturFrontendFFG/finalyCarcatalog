@@ -1,0 +1,29 @@
+.form{
+    margin: 10px auto 30px;
+    display: grid;
+    align-items: center;
+    justify-content: flex-fstart;
+
+}
+.form input{
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    outline: none;
+    transition: border-color .4s ease;
+    margin-bottom: 10px;
+}
+.form input:focus{
+    border-color: blue;
+}
+.required{
+    color: red;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 4px;
+    font-size: 12px;
+    position: relative;
+    top: -7px;
+}
+.required::first-letter{
+    text-transform: uppercase;
+}

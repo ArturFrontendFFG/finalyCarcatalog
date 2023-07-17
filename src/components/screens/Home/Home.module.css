@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+body,
+button,
+input,
+textarea {
+  font-family: "Nunito", sans-serif;
+}
+body {
+  padding: 40px;
+}
+.item {
+  border: 1px solid #fff;
+  padding: 5px;
+}
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+}
+.info {
+  padding: 10px;
+}
+.info h2 {
+  margin-bottom: 10px;
+}
+
+.btn {
+  padding: 5px 30px;
+  border: 1px solid #fff;
+  display: block;
+  cursor: pointer;
+  background: transparent;
+  color: #fff;
+  text-decoration: none;
+  transition: .3s ease;
+}
+.btn[data-hide] {
+  display: none;
+}
+.btn[data-hide="active"] {
+  display: block;
+}
+.btn:hover {
+  color: #000;
+  background-color: #fff;
+}
+.home {
+  text-decoration: none;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 34px;
+}
+.button {
+  padding: 10px 30px;
+  border: none;
+  margin: 20px 10px 0px 0;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #900808;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #fff;
+  padding: 10px;
+}
+.header__logo {
+  display: grid;
+  gap: 10px;
+}
+.header__logo_txt {
+  text-decoration: none;
+  color: #fff;
+}
+.user {
+  display: grid;
+  align-items: flex-end;
+  gap: 10px;
+  justify-content: flex-end;
+}
+.btns{
+  display: flex;
+  gap: 10px;
+}
+/* адаптив */
+@media (max-width: 1000px) {
+  .main {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
